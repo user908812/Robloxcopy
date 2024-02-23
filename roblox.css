@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #424549;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+}
+.left-bar {
+    background-color: #282b30;
+    width: 60px;
+    height: 1150px;
+}
+.home_icon {
+    margin-top: 12px;
+}
+.left-bar img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 40px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.top-bar {
+    margin-top: 12px;
+    display: grid;
+    grid-template-columns: 680px 840px 50px 133px 75px 0;
+}
+.home {
+    margin-left: 30px;
+    color: #fff;
+}
+.search {
+    background-color: #1e2124;
+    border: none;
+    width: 320px;
+    height: 30px;
+    cursor: pointer;
+}
+.top-profile-picture {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.nick {
+    margin-top: 8px;
+    color: #fff;
+}
+.robux-icon {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+.notification-icon {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+.top-friends {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1710px 0;
+}
+.friends-title {
+    margin-top: 10px;
+    margin-left: 30px;
+    color: #fff;
+}
+.see-all-button {
+    width: 100px;
+    height: 40px;
+    border: 2px solid #afafaf;
+    color: #afafaf;
+    background-color: #424549;
+    border-radius: 10px;
+}
+.friends {  /*  Lista znajomych GRID  */
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(10, 182px);
+}
+.addFriendsBox {
+    background-color: #808080;
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    cursor: pointer;
+}
+.addFriendsBox img {
+    background-color: transparent;
+    padding-top: 20px;
+    padding-left: 20px;
+    width: 140px;
+    height: 140px;
+}
+.add-friend-title {
+    color: #fff;
+    margin-left: 35px;
+}
+.friend-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    cursor: pointer;
+}
+.friend-name {
+    color: #fff;
+    margin-left: 20px;
+}
+.continue-title {
+    margin-left: 30px;
+}
+.continue-menu {
+    color: white;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1710px 0;
+}
+.games {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(8, 230px);
+}
+.game-card {
+    width: 205px;
+    height: 300px;
+    border: 3px solid grey;
+    background-color: grey;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.6s 0.1s;
+}
+.game-card:hover {
+    box-shadow: 5px 5px 15px #000;
+}
+.game-card img {
+    width: 200px;
+    height: 250px;
+}
+.game-name {
+    margin-left: 8px;
+    color: white;
+    font-weight: 540;
+    font-size: 18px;
+}
+.friend-activity-title {
+    margin-left: 30px;
+}
+.friend-activity {
+    color: white;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1710px 0;
+}
+button {
+    cursor: pointer;
+}
+@media (min-width: 320px) and (max-width: 404px) {
+    .games {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 230px);
+    }
+}
+@media (min-width: 405px) and (max-width: 600px) {
+    .games {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(3, 230px);
+    }
+}
+@media (min-width: 601px) {
+    .games {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(8, 230px);
+    }
+}
